@@ -1,0 +1,25 @@
+<section id="recent-posts" class="container">
+  <h1>Статьи</h1>
+  <div class="row mb-2">
+    {% for post in site.posts limit:4 %}
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col-auto d-none d-lg-block">
+          <img style="object-fit: cover; object-position: center;" width="200" height="250" src="{{ post.image }}">
+        </div>
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">{{ post.category }}</strong>
+          <h3 class="mb-0">{{ post.title }}</h3>
+          <div class="mb-1 text-muted">{{ post.date | date_to_long_string: "ordinal" }}</div>
+          <p class="card-text mb-auto">{{ post.description }}</p>
+          <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" class="stretched-link">Читать далее</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="d-grid mt-4 mb-4">
+    <a role="button" class="btn btn-primary" href="{{ '/blog' | prepend: site.baseurl | prepend: site.url }}">Больше</a>
+  </div>
+</section>

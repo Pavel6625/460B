@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<main class="container">
+    <article>
+        <div class="article-header">
+            <span class="small text-secondary">{{ page.category }}</span>
+            <h2>{{ page.title }}</h2>
+            <p class="lead">{{ page.description }}</p>
+            <p><i class="bi bi-calendar"></i> {{ page.date | date_to_long_string: "ordinal" }}</p>
+        </div>
+        <div class="article-body mt-4">
+            {% if page.image %}<img class="img-fluid float-end ms-2" style="max-height:600px;" src="{{ page.image | prepend: site.baseurl }}" />{% endif %}
+            {{ content }}
+        </div>
+    </article>
+</main>

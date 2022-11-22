@@ -1,0 +1,84 @@
+---
+---
+@import "main.scss";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+@import url(https://use.fontawesome.com/releases/v5.0.10/css/all.css);
+
+/* stylelint-disable selector-list-comma-newline-after */
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  min-height: 100vh; 
+  margin: 0; 
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.blog-header {
+  font-family: 'Neucha', cursive;
+  text-decoration: none;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Neucha', cursive;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+#hero, main {
+  margin-top: 90px;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+
+/*
+  * Blog posts
+  */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+
+/*
+  * Footer
+  */
+.blog-footer {
+  padding: 2rem 0 2.5rem;
+  color: #727272;
+  text-align: center;
+  background-color: $light;
+  border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 63">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #FBF7F5;
+        font-family: Marydale-Regular, Marydale;
+        font-size: 80px;
+      }
+
+      .cls-2 {
+        letter-spacing: .11em;
+      }
+
+      .cls-3 {
+        letter-spacing: .07em;
+      }
+
+      .cls-4 {
+        letter-spacing: .1em;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(.34 56.25)"><tspan class="cls-3" x="0" y="0">4</tspan><tspan class="cls-2" x="50.24" y="0">6</tspan><tspan class="cls-4" x="99.04" y="0">0Б</tspan></text>
+</svg>
